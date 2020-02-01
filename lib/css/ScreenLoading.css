@@ -1,0 +1,219 @@
+.loader {
+    width: 100%;
+    height: 100%;
+    background: rgba(11,11,20,.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader-box{
+    width:108px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom:0;
+    left:0;
+    margin: auto;
+}
+.loader-show{
+    box-sizing: border-box;
+    height: 50px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 108px;
+    transform-origin: 50% 100%;
+}
+@keyframes circle-two{
+    0%{
+        transform: rotate(0);
+        border-color: red;
+    }
+    20%{
+        transform: rotate(0);
+        border-color: yellow;
+    }
+    40%{
+        border-color: chartreuse;
+    }
+    60%{
+        border-color: cyan;
+    }
+    80%{
+        border-color: violet;
+    }
+	100% {
+        transform: rotate(360deg);
+        border-color: red;
+	}
+}
+@keyframes circle-three{
+    0%{
+        transform: rotate(0);
+        border-color: yellow;
+    }
+    20%{
+        transform: rotate(0);
+        border-color: chartreuse;
+    }
+    40%{
+        border-color:  cyan;
+    }
+    60%{
+        border-color:  violet;
+    }
+    80%{
+        border-color: red;
+    }
+	100% {
+        transform: rotate(360deg);
+        border-color: yellow;
+	}
+}
+@keyframes circle-four{
+    0%{
+        transform: rotate(0);
+        border-color: chartreuse;
+    }
+    20%{
+        transform: rotate(0);
+        border-color: cyan;
+    }
+    40%{
+        border-color:  violet;
+    }
+    60%{
+        border-color:  red;
+    }
+    80%{
+        border-color: yellow;
+    }
+	100% {
+        transform: rotate(360deg);
+        border-color: chartreuse;
+	}
+}
+@keyframes circle-five{
+    0%{
+        transform: rotate(0);
+        border-color: cyan;
+    }
+    20%{
+        transform: rotate(0);
+        border-color: violet;
+    }
+    40%{
+        border-color: red;
+    }
+    60%{
+        border-color:  yellow;
+    }
+    80%{
+        border-color: chartreuse;
+    }
+	100% {
+        transform: rotate(360deg);
+        border-color: cyan;
+	}
+}
+@keyframes circle-one{
+    0%{
+        transform: rotate(0);
+        border-color: violet;
+    }
+    20%{
+        transform: rotate(0);
+        border-color: red;
+    }
+    40%{
+        border-color: yellow;
+    }
+    60%{
+        border-color:  chartreuse;
+    }
+    80%{
+        border-color: cyan;
+    }
+	100% {
+        transform: rotate(360deg);
+        border-color: violet;
+	}
+}
+.loader-show:nth-child(1){
+    animation: circle-one 2000ms cubic-bezier(0.5, 0.5, 0.5, 1.4) infinite;
+    animation-delay: 250ms;
+}
+.loader-show:nth-child(2){
+    animation: circle-two 2000ms cubic-bezier(0.5, 0.5, 0.5, 1.4) infinite;
+    animation-delay: 200ms;
+}
+.loader-show:nth-child(3){
+    animation: circle-three 2000ms cubic-bezier(0.5, 0.5, 0.5, 1.4) infinite;
+    animation-delay: 150ms;
+}
+.loader-show:nth-child(4){
+    animation: circle-four 2000ms cubic-bezier(0.5, 0.5, 0.5, 1.4) infinite;
+    animation-delay: 100ms;
+}
+.loader-show:nth-child(5){
+    animation: circle-five 2000ms cubic-bezier(0.5, 0.5, 0.5, 1.4) infinite;
+    animation-delay: 50ms;
+}
+
+.line{
+    border: 4px solid transparent; 
+    width:100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 100%;
+    border-color: white;
+    position: absolute;
+    right: 0;
+    bottom:0;
+    left:0;
+    margin: 0 auto;
+}
+.loader-show:nth-child(1) .line{
+    border-color: inherit;
+    height: 90px;
+    width: 90px;
+    top: 7px;
+}
+.loader-show:nth-child(2) .line{
+    border-color: inherit;
+    height: 76px;
+    width:76px;
+    top:14px;
+}
+.loader-show:nth-child(3) .line{
+    border-color: inherit;
+    height: 62px;
+    width:62px;
+    top:21px;
+}
+.loader-show:nth-child(4) .line{
+    border-color: inherit;
+    height: 48px;
+    width:48px;
+    top:28px;
+}
+.loader-show:nth-child(5) .line{
+    border-color: inherit;
+    height: 34px;
+    width:34px;
+    top:35px;
+}
+.loader-tip-top{
+    color: white;
+    margin-top: -80px;
+}
+.loader-tip-bottom{
+    color: white;
+    margin-top: 160px;
+}

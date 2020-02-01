@@ -1,0 +1,21 @@
+{
+  "name": "screenloading",
+  "version": "1.0.1",
+  "description": "LOADING",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue-loading",
+    "ScreenLoading"
+  ],
+  "author": "Mzy",
+  "license": "ISC",
+  "dependencies": {
+
+  }
+}
